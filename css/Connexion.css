@@ -5,14 +5,18 @@ body
 {
     background-color: rgb(255, 155, 23);
 }
-
-#co
-{
-    margin: 17% 40%; 
-    border : 5px solid blue;
-    background-color: rgb(132, 237, 255);
+#titre{
+    margin: 17%;
 }
-p{
+div {
+    background-color: lightgrey;
+    width: 400px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+#ins
+{
     margin-right: 0%;
-    background-color : rgb(252, 143, 0));
+    background-color : rgb(252, 143, 0);
 }
