@@ -4,15 +4,15 @@ $page = $_GET['page'];
 
 switch ($page){
     case "accueil":
-        include "View/index.html";
+        include "View/accueil.html";
         break;
     case "login":
-        include"View/Connexion.html";
+        include "View/Connexion.html";
         break;
     default:
-        echo "Erreur";
+        include "View/Connexion.html";
 }
 
 // pour les formulaires, utiliser post, pas get
 
-?>    
+?>

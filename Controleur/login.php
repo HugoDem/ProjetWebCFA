@@ -2,11 +2,20 @@
 
 $login = $_POST['login'];
 $password = $_POST['password'];
+$tableau = array($login,$password);
 
-if ($login=="abc" && $password=="123"){
-	include "Vue/success.php";
-}else {
-	include "Vue/error.php";
+switch($tableau){
+    case array("admin","4321"):
+        include "../View/accueil.html";
+        break;
+    
+    case array("user","1234"):
+        include "../View/accueil.html";
+        break;
+    
+    default:
+        include "../View/Erreur.html";
+        break;
 }
 
 ?>
