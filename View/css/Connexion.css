@@ -6,12 +6,12 @@ body
     background-color: grey;
 }
 #titre{
-    margin: 17%;
+    margin-left : auto;
 }
 div {
     background-color: lightgrey;
     width: 400px;
-    border: 25px solid green;
+    border: 25px solid red;
     padding: 25px;
     margin: 25px;
 }
