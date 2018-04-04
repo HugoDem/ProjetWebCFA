@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf 8">
     <title>E-sep, ton commerce</title>
-    <link rel="stylesheet" type="text/css" href="View/css/Connexion.css" />
+    <link rel="stylesheet" type="text/css" href="../View/css/Connexion.css" />
 </head>
 
 <body>
