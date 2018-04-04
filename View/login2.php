@@ -11,17 +11,16 @@
     <div>
         <h3 class="titre">Connexion</h3>
         <form action="index.php?page=login" method="post">
-            <input type="text" name="login" placeholder="Nom d'utilisateur">
+            <input type="text" name="prenom" placeholder="prénom">
             <br>
+            <input type="text" name="nom" placeholder="nom">
             <input type="password" name="password" placeholder="Mot de passe">
             <br>
+            <input type="text" name="numero" placeholder="numéro">
+            <br>
             <input type="submit" name="submit" value="Valider">
-            <p>Pas encore inscrit?
-            <a href="login2.php">Cliquez ici</a>
-
+            <br>
             
-            
-            </p>
         
         </form>
     </div>
