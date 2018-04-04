@@ -7,7 +7,7 @@ switch ($page){
         include "View/login.php";
         break;
     case "login":
-        include "Controleur/login.php";
+        include "Controler/login.php";
         break;
     default:
         include "View/login.php";

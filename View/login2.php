@@ -10,10 +10,13 @@
 <body>
     <div>
         <h3 class="titre">Connexion</h3>
-        <form action="index.php?page=login" method="post">
+        <form action="../Controler/inscription.php?" method="post">
             <input type="text" name="prenom" placeholder="prénom">
             <br>
             <input type="text" name="nom" placeholder="nom">
+            <br>
+            <input type="text" name="mail" placeholder="mail">
+            <br>
             <input type="password" name="password" placeholder="Mot de passe">
             <br>
             <input type="text" name="numero" placeholder="numéro">

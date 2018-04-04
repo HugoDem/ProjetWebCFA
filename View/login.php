@@ -17,11 +17,10 @@
             <br>
             <input type="submit" name="submit" value="Valider">
             <p>Pas encore inscrit?
-            <a href="login2.php">Cliquez ici</a>
-
+           
+            <a href="view/login2.php?">Cliquez ici</a>
             
             
-            </p>
         
         </form>
     </div>
