@@ -1,6 +1,6 @@
 <html>
 
-Ce mail existe déjà
+<p>Ce mail existe déjà</p>
 
 
 
