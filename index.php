@@ -11,7 +11,7 @@ function showPage($page){
 if ($page){
     switch ($page) {
     case 'accueil':
-        showPage('View/home.php');
+        showPage('View/login.php');
         break;
     case 'login':
         showPage('View/login.html');
@@ -40,7 +40,7 @@ if ($page){
             break;
     }
 }else{
-    showPage("View/home.php");
+    showPage("View/login.php");
 }           
 
 ?>
