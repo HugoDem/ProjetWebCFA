@@ -1,7 +1,7 @@
 <?php
 
-$page = $_GET['page'];
-$action = $_GET['action'];
+$page = isset($_GET['page']) ? $_GET['page'] : null;
+$action = isset($_GET['action']) ? $_GET['action'] : null;
 
 function showPage($page){
     include_once "View/header.html";
@@ -17,7 +17,10 @@ if ($page){
         showPage('View/login.html');
         break;
     case "inscription":
-        showPage('View/inscription.html');
+        showPage('View/inscription.php');
+        break;
+    case "inscriptionfalse":
+        showPage('View/inscriptionfalse.php');
         break;
     default:
         showPage('View/home.php');

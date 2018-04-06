@@ -18,7 +18,7 @@
             <input type="submit" name="submit" value="Valider">
             <p>Pas encore inscrit?
            
-            <a href="view/login2.php?">Cliquez ici</a>
+            <a href="index.php?page=inscription">Cliquez ici</a>
             
             
         
