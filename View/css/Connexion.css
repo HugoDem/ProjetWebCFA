@@ -1,19 +1,20 @@
-h3{
-    margin : 10%;
-}
 body
 {
-    background-color: grey;
+    background-image: url("../images/Fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 #titre{
     margin-left : auto;
 }
 div {
-    background-color: lightgrey;
-    width: 400px;
-    border: 25px solid red;
+    text-align: center;
+    display: block;
+    margin: 10% auto;
+    background-color: white;
+    width: 25%;
     padding: 25px;
-    margin: 25px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
 }
 #ins
 {
