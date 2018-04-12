@@ -9,17 +9,17 @@
 
 <body>
     <div>
-        <h3 class="titre">Connexion</h3>
+        <h3 class="titre">Inscription</h3>
         <form action="index.php?action=inscription" method="post">
-            <input type="text" name="prenom" placeholder="prénom">
+            <input type="text" name="prenom" placeholder=Prénom>
             <br>
-            <input type="text" name="nom" placeholder="nom">
+            <input type="text" name="nom" placeholder="Nom">
             <br>
-            <input type="text" name="mail" placeholder="mail">
+            <input type="text" name="mail" placeholder="Mail">
             <br>
             <input type="password" name="password" placeholder="Mot de passe">
             <br>
-            <input type="text" name="numero" placeholder="numéro">
+            <input type="text" name="numero" placeholder="Numéro">
             <br>
             <input type="submit" name="submit" value="Valider">
             <br>
