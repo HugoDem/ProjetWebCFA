@@ -8,13 +8,22 @@ function showPage($page){
 	include_once $page;
 	include_once "View/footer.html";
 }
+
+function checkLoggedIn(){
+	session_start();
+	if (!$_SESSION["user"]){
+		header("Location: index.php?page=login");
+	}
+}
+    
 if ($page){
     switch ($page) {
     case 'accueil':
-        showPage('View/login.php');
+        checkLoggedIn();
+        showPage('View/home.php');
         break;
     case 'login':
-        showPage('View/login.html');
+        showPage('View/login.php');
         break;
     case "inscription":
         showPage('View/inscription.php');
@@ -43,7 +52,7 @@ if ($page){
             break;
     }
 }else{
-    showPage("View/login.php");
-}           
+    showPage("View/home.php");
+}
 
 ?>

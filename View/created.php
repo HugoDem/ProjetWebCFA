@@ -1,14 +1,11 @@
 <html>
 
-    Vous êtes connecté
+Vous êtes connecté
 
 <?php 
-    echo "Nom : ".$creatdeuser->getName()."";
+    echo "Nom : ".$createduser->getName()."";
     echo "Prenom :".$createduser->getFirstName()."";
     echo "Mail :".$createduser->getMail()."";
-    
-
-
 ?>
-</html>
 
+</html>

@@ -40,8 +40,8 @@ class Model
 		$user = null;
 		include_once "Model/user.php";
 	    foreach  ($this->connexion->query($sql) as $row) {
-	    	$user = new User($row['prenom'],$row['nom'],$row['mail'],$row['password'],$row['numero']);
-	  	}
+                $user = new User($row['nom'],$row['prenom'],$row['mail'],$row['motdepasse'],$row['numero']);
+        }
 	  	return $user;
 	}
 }

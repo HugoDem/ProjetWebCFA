@@ -2,26 +2,23 @@
 
 $login = $_POST['login'];
 $password = $_POST['password'];
-$tableau = array($login,$password);
 
-/*
-if ($login=="abc" && $password=="123"){
-	include "View/home.php";
-}else {
-	include "View/error.php";
-}
-*/
+include "Model/user.php";
+include "Model/model.php";
 
-switch($tableau){
-    case array("admin","4321"):
-        include "View/home.php";
-        break;
-    case array("user","1234"):
-        include "View/home.php";
-        break;
-    default:
-        include "View/error.php";
-        break;
+$model = new Model();
+$user = $model->getUserByEmail($login);
+
+if ($user!=null) {
+    if (password_verify($password, $user->getPassword())){
+	   session_start();
+	   $_SESSION["user"]=serialize($user);
+        header("Location: index.php?page=accueil");
+    } else {
+        header("Location: index.php?page=login");
+    }
+} else {
+    header("Location: index.php?page=inscription");
 }
 
 ?>

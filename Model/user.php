@@ -5,20 +5,20 @@
 */
 class User 
 {
-    private $prenom;
     private $nom;
+    private $prenom;
     private $mail;
-    private $numero;
     private $password;
+    private $numero;
 	private $id;
 
-	function __construct($prenom,$nom,$mail,$numero,$password)
+	function __construct($nom,$prenom,$mail,$password,$numero)
 	{
-		$this->prenom=$prenom;
         $this->nom=$nom;
+		$this->prenom=$prenom;
         $this->mail=$mail;
-        $this->numero=$numero;
         $this->password=$password;
+        $this->numero=$numero;
 
 
 	}
@@ -34,13 +34,12 @@ class User
 	function getMail(){
         return $this->mail;
     }
+    function getNumero(){
+        return $this->numero;
+	}
     function getPassword(){
         return $this->password;    
     }
-    function getNumero(){
-        return $this->numero;
-
-	}
 	function setName($nom){
 		$this->nom=$nom;
 	}
@@ -48,13 +47,13 @@ class User
 		$this->mail=$mail;
 	}
 
-    function setNumero(){
-        $this->numero=$numero;
-    }
 
     function setPassword(){
         $this->password=$password;
     }
 
+    function setNumero(){
+        $this->numero=$numero;
+    }
 }
 ?>

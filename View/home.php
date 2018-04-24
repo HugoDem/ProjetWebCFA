@@ -2,8 +2,6 @@
 <html>
 
 <head>
-    <meta charset="utf 8">
-    <title>E-sep, ton commerce</title>
     <link rel="stylesheet" type="text/css" href="View/css/style.css">
 </head>
 
@@ -11,9 +9,10 @@
     <header>
         <img id="couv" src="View/images/couv.jpg">
     </header>
-    <navbar1>
-
-    </navbar1>
+    <navbar>
+        <a href="index.php?page=login">Se connecter</a>
+        <a href="index.php?page=inscription">S'inscrire</a>
+    </navbar>
     <article>
         <image>
             <img src="View/images/article_1.jpg" width="100px" height="100px">

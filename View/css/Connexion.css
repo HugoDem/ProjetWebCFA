@@ -1,5 +1,11 @@
+@font-face{
+    font-family: 'Helvetica';
+    src: url("../police/HelveticaNeueLTStd Lt.otf")
+}
+
 body
 {
+    font-family: 'Helvetica';
     background-image: url("../images/Fond.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -8,6 +14,7 @@ body
     margin-left : auto;
 }
 div {
+    font-family: 'Helvetica';
     text-align: center;
     display: block;
     margin: 10% auto;
@@ -23,7 +30,18 @@ div {
     background-color : rgb(252, 143, 0);
 }
 
-p
+#erreur
 {
     color: red;
+}
+
+a
+{
+    color: grey;
+    text-decoration: none;
+}
+
+input
+{
+    margin-bottom: 5px;
 }
