@@ -13,23 +13,30 @@
         <a href="index.php?page=login">Se connecter</a>
         <a href="index.php?page=inscription">S'inscrire</a>
     </navbar>
+    <panier>
+        <imagepan>
+            <a href="View/monpanier.php">
+                <img src="View/images/panier.jpg" width="50px" height="50px">
+            </a>
+        </imagepan>
+        <nompan>
+            Panier
+        </nompan>
+    </panier>
     <article>
         <image>
-            <img src="View/images/article_1.jpg" width="100px" height="100px">
+            <img src="View/images/article_1.jpg" width="200px" height="200px">
         </image>
         <Nom>
             Babyfoot du Futur
         </Nom>
         <carac>
-            <li>
-                <ul>Prix : 1500€</ul>
-                <ul>Dimensions : 150x200x120</ul>
-            </li>
+            1500€
+                <!ulDimensions : 150x200x120</ul>
         </carac>
         <description>
             Il est super
         </description>
     </article>
 </body>
-
 </html>
