@@ -14,7 +14,7 @@ $model = new Model();
      
 $pass = password_hash($password, PASSWORD_DEFAULT);
 
-$createdUser = new User($prenom,$nom,$mail,$numero,$pass);
+$createdUser = new User($prenom,$nom,$mail,$pass,$numero);
 $user = $model->getUserByEmail($createdUser->getMail());
 if ($user==null){
     $model->createUser($createdUser);
