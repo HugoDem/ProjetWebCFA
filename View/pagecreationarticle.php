@@ -6,7 +6,7 @@
             <br>
             <input type="text" name="prix" placeholder="prix">
             <br>
-            <input type="text" name="text" placeholder="description">
+            <input type="text" name="description" placeholder="description">
             <br>
             <input type="text" name="photo" placeholder="photo">
             <br>
