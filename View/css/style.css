@@ -19,10 +19,16 @@ body
     z-index: 0;
 }
 
+navbar
+{
+    position: absolute;
+    margin: 16% 30% 0% 0%;
+}
+
 panier
 {
     background-color: whitesmoke;
-    margin: 16% 0% 0% 78%;
+    margin: 16% 5%% 5% 90%;
     width: 9%;
     position: absolute;
 }
@@ -37,15 +43,12 @@ nompan
 article
 {
     background-color: aliceblue;
-    margin: 20% 0% 0% 60%;
+    margin: 25% 0% 0% 60%;
     width: 16%;
     height: 40%;
+    position: absolute;
 }
 
-li
-{
-    text-align: center;
-}
 
 description
 {
