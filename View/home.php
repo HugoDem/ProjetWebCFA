@@ -24,19 +24,45 @@
         </nompan>
     </panier>
     <article>
-        <image>
-            <img src="View/images/article_1.jpg" width="200px" height="200px">
-        </image>
-        <Nom>
-            Babyfoot du Futur
-        </Nom>
-        <carac>
-            1500€
-                <!ulDimensions : 150x200x120</ul>
-        </carac>
-        <description>
-            Il est super
-        </description>
+    <?php
+try
+{
+	// On se connecte à MySQL
+	$bdd = new PDO('mysql:host=localhost;dbname=projetwebcfa;charset=utf8', 'root', 'root');
+}
+catch(Exception $e)
+{
+	// En cas d'erreur, on affiche un message et on arrête tout
+        die('Erreur : '.$e->getMessage());
+}
+
+
+$reponse = $bdd->query('SELECT * FROM article');
+
+
+while ($donnees = $reponse->fetch())
+{
+?>
+
+    <p>
+    <strong>Nom</strong> : <?php echo $donnees['nom']; ?><br />
+    Le prix est de :<?php echo $donnees['prix']; ?> euros <br />
+    <?php echo $donnees['description']; ?><br />
+    </em>
+    <img src='<?php echo $donnees['photo'];?>' />
+    
+
+   </p>
+
+
+<?php
+}
+
+
+
+$reponse->closeCursor(); // Termine le traitement de la requête
+
+?>
     </article>
 </body>
 </html>
