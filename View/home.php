@@ -10,8 +10,8 @@
         <img id="couv" src="View/images/couv.jpg">
     </header>
     <navbar>
-        <a href="index.php?page=login">Se connecter</a>
-        <a href="index.php?page=inscription">S'inscrire</a>
+        <a href="index.php?page=login" title="Se connecter">Se connecter</a>
+        <a href="index.php?page=inscription" title="Plus beaucoup de place!!">S'inscrire</a>
     </navbar>
     <panier>
         <imagepan>
