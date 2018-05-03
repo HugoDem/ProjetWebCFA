@@ -4,6 +4,7 @@
 </head>
 <body>
     <div>
+        <h3>Ajouter un article</h3>
         <form action="../Controler/champ.php" method="post">
             <input type="text" name="nom" placeholder="Nom">
             <br>
