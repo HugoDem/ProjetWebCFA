@@ -1,4 +1,7 @@
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="View/css/Connexion.css">  
+</head>
 <body>
     <div>
         <form action="../Controler/champ.php" method="post">
