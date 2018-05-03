@@ -7,22 +7,17 @@
 
 <body>
     <header>
-        <img id="couv" src="View/images/couv.jpg">
+
     </header>
     <navbar>
-        <a href="index.php?page=login" title="Se connecter">Se connecter</a>
-        <a href="index.php?page=inscription" title="Plus beaucoup de place!!">S'inscrire</a>
-    </navbar>
-    <panier>
-        <imagepan>
-            <a href="View/monpanier.php">
-                <img src="View/images/panier.jpg" width="50px" height="50px">
-            </a>
-        </imagepan>
-        <nompan>
-            Panier
-        </nompan>
-    </panier>
+            <ul>
+                <li><a id="connecter" href="index.php?page=login" title="Connexion">Se connecter</a></li>
+                <li><a id="inscrire" href="index.php?page=inscription" title="Plus beaucoup de place!!">S'inscrire</a></li>
+                <li style="float:right"><a id="nompan" href="index.php?page=monpanier">Panier</a></li>
+            </ul>
+            
+        </navbar> 
+    
     <article>
     <?php
 try
