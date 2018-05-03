@@ -31,6 +31,9 @@ if ($page){
     case "inscriptionfalse":
         showPage('View/inscriptionfalse.php');
         break;
+    case "monpanier":
+        showPage('View/monpanier.php');
+        break;
     default:
         showPage('View/home.php');
         break;
