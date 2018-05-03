@@ -41,10 +41,9 @@ while ($donnees = $reponse->fetch())
 
     <p>
     <strong>Nom</strong> : <?php echo $donnees['nom']; ?><br />
-    Le prix est de :<?php echo $donnees['prix']; ?> euros <br />
+    Le prix est de : <?php echo $donnees['prix']; ?> euros <br />
+    <img src='View/images/<?php echo $donnees['photo'];?>' height=300px width=300px />
     <?php echo $donnees['description']; ?><br />
-    </em>
-    <img src='<?php echo $donnees['photo'];?>' />
     
 
    </p>
