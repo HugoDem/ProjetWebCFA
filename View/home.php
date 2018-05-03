@@ -13,6 +13,8 @@
             <ul>
                 <li><a id="connecter" href="index.php?page=login" title="Connexion">Se connecter</a></li>
                 <li><a id="inscrire" href="index.php?page=inscription" title="Plus beaucoup de place!!">S'inscrire</a></li>
+                <li><a id="article" href="index.php?page=ajoutarticle">Ajouter un article</a></li>
+                <li><a id="logout" href="index.php?action=logout">Se déconnecter</a></li>
                 <li style="float:right"><a id="nompan" href="index.php?page=monpanier">Panier</a></li>
             </ul>
             

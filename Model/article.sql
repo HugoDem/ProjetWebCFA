@@ -2,10 +2,10 @@
 -- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
--- Hôte : localhost:3306
--- Généré le :  jeu. 29 mars 2018 à 14:38
--- Version du serveur :  5.6.34-log
--- Version de PHP :  7.1.7
+-- Host: localhost:3306
+-- Generation Time: May 03, 2018 at 11:44 AM
+-- Server version: 5.6.34-log
+-- PHP Version: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `projetwebcfa`
+-- Database: `projetwebcfa`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `article`
+-- Table structure for table `article`
 --
 
 CREATE TABLE `article` (
@@ -33,28 +33,38 @@ CREATE TABLE `article` (
   `nom` varchar(50) NOT NULL,
   `prix` int(5) NOT NULL,
   `description` text NOT NULL,
-  `photo` varchar(50) NOT NULL
+  `photo` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Index pour les tables déchargées
+-- Dumping data for table `article`
+--
+
+INSERT INTO `article` (`id`, `nom`, `prix`, `description`, `photo`) VALUES
+(1, 'babyfoot', 1500, '', 'article_2.jpg'),
+(2, 'babyfoot2', 1500, '', 'article_3.jpg'),
+(3, 'babyfoot3', 54, '', 'article_4.jpg'),
+(9, 'babyfoot4', 355, 'super', 'article_1.jpg');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `article`
+-- Indexes for table `article`
 --
 ALTER TABLE `article`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `article`
+-- AUTO_INCREMENT for table `article`
 --
 ALTER TABLE `article`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;COMMIT;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

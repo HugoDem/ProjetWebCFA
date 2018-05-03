@@ -28,8 +28,8 @@ if ($page){
     case "inscription":
         showPage('View/inscription.php');
         break;
-    case "inscriptionfalse":
-        showPage('View/inscriptionfalse.php');
+    case "ajoutarticle":
+        showPage('View/pagecreationarticle.php');
         break;
     case "monpanier":
         showPage('View/monpanier.php');
